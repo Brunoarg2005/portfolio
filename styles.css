@@ -1,0 +1,150 @@
+/* Variables de colores para modo claro (predeterminado) */
+:root {
+    --bg-color: #ABD2FA;
+    --text-color: #333;
+    --header-bg-color: #7692FF;
+    --header-text-color: white;
+    --section-bg-color: rgba(255, 255, 255, 0.9);
+    --section-text-color: black;
+    --card-bg-color: #f9f9f9;
+    --footer-bg-color: black;
+    --footer-text-color: white;
+    --highlight-color: #091540;
+}
+
+/* Variables de colores para modo oscuro */
+body.dark {
+    --bg-color: black;
+    --text-color: #f0f0f0;
+    --header-bg-color: #333;
+    --header-text-color: #f0f0f0;
+    --section-bg-color: #333;
+    --section-text-color: #f0f0f0;
+    --card-bg-color: #222;
+    --footer-bg-color: #222;
+    --footer-text-color: #f0f0f0;
+    --highlight-color: #ABD2FA;
+}
+
+/* Estilos generales */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+    padding: 2em 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Sección sobre mí */
+.sobre-mi {
+    background-color: var(--section-bg-color);
+    color: var(--section-text-color);
+    border-radius: 8px;
+    padding: 2em;
+    margin: 2em auto;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-mi h2 {
+    color: var(--highlight-color);
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+.sobre-mi p {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+}
+
+/* Habilidades */
+.habilidades ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+}
+
+.habilidades li {
+    background-color: var(--card-bg-color);
+    padding: 1em;
+    margin: 0.5em 0;
+    border-radius: 5px;
+    color: var(--section-text-color);
+}
+
+.habilidades li strong {
+    color: var(--section-text-color);
+    font-size: 1.2em;
+}
+
+.habilidades li p {
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
+
+/* Sección de Proyectos */
+.contenedor-proyectos {
+    display: flex;
+    gap: 2%;
+    padding: 2em 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.proyecto {
+    background-color: var(--card-bg-color);
+    border-radius: 8px;
+    padding: 1.5em;
+    width: 45%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: var(--section-text-color);
+}
+
+.proyecto h3 {
+    color: var(--highlight-color);
+    font-size: 1.5em;
+}
+
+.proyecto p {
+    font-size: 0.95em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5em;
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    font-size: 0.9em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.presentacion {
+    text-align: center;
+    font-size: 1.8em;
+    color: var(--highlight-color);
+    margin: 2em 0;
+}
